@@ -11,18 +11,20 @@ body {
 
 /* Login button styles */
 #login {
-  background-color: #4285f4;
-  color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
+  background-color: #C7C8CC;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s ease;
 }
 
 #login:hover {
-  background-color: #357abd;
+  background-color: #C7C8CC;
 }
 
 /* Message styles */
