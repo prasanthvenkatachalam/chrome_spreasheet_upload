@@ -71,7 +71,7 @@ const checkAuthenticationStatus = async () => {
 
        const data = await response.json();
        loginButton.style.display = 'none';
-       messageDiv.textContent = `Logged in as: ${data.email || ""}`;
+       messageDiv.textContent = `${data.email || ""}`;
        addLogoutButton();
        window.uiManager.showLoadingState();
        window.fileManager.verifyAndListFiles(token);
@@ -140,7 +140,7 @@ const fetchUserInfo = (token) => {
    })
    .then(data => {
        loginButton.style.display = 'none';
-       messageDiv.textContent = `Logged in as: ${data?.email || ""}`;
+       messageDiv.textContent = `${data?.email || ""}`;
        addLogoutButton();
        window.uiManager.showLoadingState();
        window.fileManager.verifyAndListFiles(token);

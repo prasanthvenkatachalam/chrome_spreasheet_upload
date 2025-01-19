@@ -3,9 +3,10 @@ body {
   min-width: 400px;
   padding: 16px;
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color:#C4D9FF !important;
   margin: 0;
   position: relative;
+  font-size: 14px;
 }
 
 /* Login button styles */
@@ -26,7 +27,6 @@ body {
 
 /* Message styles */
 #message {
-  margin: 10px 0;
   color: #333;
   font-size: 14px;
   padding: 8px 0;
@@ -92,11 +92,11 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  padding: 6px 12px;
-  font-size: 12px;
-  background-color: #f0f0f0;
+  padding: 12px 12px;
+  font-size: 14px;
+  background-color: #C7C8CC;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
