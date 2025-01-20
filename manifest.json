@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Spreadsheet Uploader",
+  "name": "EasyTab: Automatic Google Sheets Exporter",
   "version": "1.0",
   "description": "Upload spreadsheets to Google Drive",
   "permissions": ["identity", "identity.email", "downloads", "storage"],
@@ -17,7 +17,11 @@
       "https://www.googleapis.com/auth/spreadsheets"
     ]
   },
+  "icons": {
+    "48": "icons/icon40.png"
+  },
   "action": {
+    "default_icon": "icons/icon40.png",
     "default_popup": "popup.html"
   }
 }
