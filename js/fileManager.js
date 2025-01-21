@@ -35,7 +35,8 @@ const verifyAndListFiles = async (token) => {
     // Search downloads for complete downloads
     chrome.downloads.search({
         state: 'complete',
-        orderBy: ['-startTime']
+        orderBy: ['-startTime'],
+        limit: 4  // Limit results to 4 most recent downloads
     }, async (downloads) => {
         const validFiles = await filterValidFiles(downloads);
         window.uiManager.updateFileList(validFiles, token);
@@ -53,6 +54,7 @@ const filterValidFiles = async (downloads) => {
     for (const download of downloads) {
         if (isValidSpreadsheet(download) && await fileExists(download)) {
             validFiles.push(download);
+            if (validFiles.length >= 4) break;  // Stop after finding 4 valid files
         }
     }
     
