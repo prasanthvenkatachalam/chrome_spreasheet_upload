@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "EasyTab: Automatic Google Sheets Exporter",
+  "name": "EasyTab",
   "version": "1.0",
-  "description": "Upload spreadsheets to Google Drive",
+  "description": "Export Excel Files Into Google Sheets In One Click",
   "permissions": ["identity", "identity.email", "downloads", "storage"],
   "host_permissions": [
     "https://www.googleapis.com/*",
