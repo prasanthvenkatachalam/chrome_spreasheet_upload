@@ -13,15 +13,23 @@
     "client_id": "",
     "scopes": [
       "https://www.googleapis.com/auth/userinfo.email",
-      "https://www.googleapis.com/auth/drive",
+      "https://www.googleapis.com/auth/drive.file",
       "https://www.googleapis.com/auth/spreadsheets"
     ]
   },
   "icons": {
-    "48": "icons/icon40.png"
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
   "action": {
-    "default_icon": "icons/icon40.png",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
     "default_popup": "popup.html"
   }
 }
