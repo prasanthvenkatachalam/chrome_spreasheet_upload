@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(data => {
             loginButton.style.display = 'none';
-            messageDiv.textContent = `Logged in as: ${data?.email || ""}`;
+            messageDiv.textContent = `${data?.email || ""}`;
             addLogoutButton();
             showLoadingState();
             verifyAndListFiles(token);
